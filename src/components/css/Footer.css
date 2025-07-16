@@ -1,0 +1,266 @@
+.footer {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  align-content: end;
+  min-height: min-content;
+  background: #1034a6;
+  padding: 50px;
+  position: relative;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+footer .footer-container .footer-section h3 {
+  position: relative;
+  color: #ffffff94;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.footer .footer-container .about-us h3 {
+  display: grid;
+  grid-template-columns: 45px 80px;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer .footer-container .footer-section p {
+  color: #ffffffd8;
+  max-width: 390px;
+}
+
+footer .footer-container .social {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+}
+
+footer .footer-container .social li {
+  list-style: none;
+}
+
+footer .footer-container .social li {
+  display: inline-block;
+  display: grid;
+  text-decoration: none;
+}
+
+.quicklinks {
+  position: relative;
+}
+
+.quicklinks ul li {
+  list-style: none;
+}
+
+.quicklinks ul li a {
+  color: #ffffffd8;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.newsletter {
+  position: relative;
+}
+
+.newsletter li {
+  display: grid;
+  grid-template-columns: 30 1fr;
+  margin-bottom: 16px;
+  align-items: center;
+  max-width: 250px;
+  justify-content: baseline;
+}
+
+.newsletter li form {
+  display: grid;
+  grid-template-columns: 30 1fr;
+  /* margin-bottom: 16px; */
+  align-items: center;
+  max-width: 250px;
+  justify-content: baseline;
+}
+
+.newsletter li a {
+  color: #ffffffd8;
+}
+
+.newsletter li form input {
+  padding: 8px;
+  position: relative;
+  font-size: 15px;
+  outline: 0;
+}
+
+.newsletter li form button {
+  padding: 7.3px;
+  position: absolute;
+  margin: 0 3px;
+  border: 0;
+  color: #ffffffd8;
+  background-color: #1034a6;
+  font-size: 15px;
+  cursor: pointer;
+  justify-self: right;
+  transition: 0.5s;
+}
+
+.newsletter li form button:hover {
+  background-color: #fb9f07;
+  color: #000000;
+}
+
+.copyright-container {
+  width: 100%;
+  border-top: 1px solid #ffffff49;
+  z-index: 1;
+}
+
+.copyright-text {
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 30px;
+  color: #ffffffd8;
+}
+
+.copyright-text p a {
+  text-decoration: none;
+  color: #ffffffd8;
+}
+
+.dialog-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  color: #333;
+  padding: 12px 14px 0px 0px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 8px;
+  width: calc(100% - 40px);
+  max-width: 400px;
+}
+
+.dialog-content {
+  padding-bottom: 4px;
+  padding-left: 14px;
+  position: relative;
+}
+
+.dialog-box.success .dialog-progress-bar {
+  background-color: #00ff3c;
+}
+
+.dialog-box.warning .dialog-progress-bar {
+  background-color: #ffbf00;
+}
+
+.dialog-box.error .dialog-progress-bar {
+  background-color: #ff0019;
+}
+
+.dialog-icon {
+  font-size: 24px;
+}
+
+.success-icon {
+  color: #00ff3c;
+}
+
+.warning-icon {
+  color: #ffbf00;
+}
+
+.error-icon {
+  color: #ff0019;
+}
+
+.dialog-message {
+  font-size: 16px;
+  font-weight: 200;
+  text-align: center;
+  transform: translateY(2.3px);
+  position: absolute;
+  text-wrap: nowrap;
+  margin-left: 8px;
+}
+
+.dialog-progress-bar {
+  height: 6px;
+  transition: width 0.06s linear;
+  align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  .dialog-box {
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    gap: 6px;
+  }
+
+  .dialog-icon {
+    font-size: 20px;
+  }
+
+  .dialog-message {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    padding: 50px 30px;
+  }
+
+  footer .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 50px 0;
+  }
+  footer .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .footer-container .footer-section p {
+    max-width: 340px;
+  }
+  .copyright-text {
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 50px 30px;
+  }
+}

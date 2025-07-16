@@ -1,0 +1,112 @@
+.counter {
+  height: min-content;
+  background-color: #dde5fc;
+}
+
+.counter div {
+  position: relative;
+  max-width: 62.5rem;
+}
+
+.counter-wrapper {
+  position: absolute;
+  width: 100%;
+  transform: translate(-50%, 0);
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.counter-container {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background-color: #ffffff;
+  border-bottom: 10px solid #3586ff;
+}
+
+.counter-container i {
+  color: #0c55c2;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.counter-container .counter-num {
+  color: #002e74;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.counter-container .counter-text {
+  color: #002e74;
+  font-size: 1.1em;
+  text-align: center;
+  pad: 0.7e 0;
+  font-weight: 400;
+  line-height: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .counter-wrapper {
+    width: 85vw;
+  }
+  .counter-container {
+    width: 26vmin;
+    height: 26vmin;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .counter-wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .counter-container {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .counter-wrapper {
+    gap: 15px;
+  }
+  .counter-container {
+    width: 80%;
+    height: 25vmin;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 388px) {
+  .counter-container {
+    height: 35vmin;
+  }
+}
+
+@media screen and (max-width: 284px) {
+  .counter-container {
+    height: 45vmin;
+  }
+}
+
+@media screen and (max-width: 220px) {
+  .counter-container {
+    height: 50vmin;
+  }
+}
