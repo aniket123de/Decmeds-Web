@@ -56,7 +56,7 @@ function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link to="/features" onClick={scrollToTop}>Featur</Link>
+                <Link to="/features" onClick={scrollToTop}>Features</Link>
               </li>
               <li>
                 <Link to="/contact" onClick={scrollToTop}>Connect</Link>
