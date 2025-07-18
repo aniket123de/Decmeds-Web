@@ -42,7 +42,7 @@ function Hero() {
                 <span className="blue-text text-600">
                   Easy Doctor Appointments
                 </span>{" "}
-                – Anytime, Ane!
+                – Anytime, Anywhere!
               </p>
               <div className="home-btn-box">
                 <a href="https://" className="home-btn text-600">
